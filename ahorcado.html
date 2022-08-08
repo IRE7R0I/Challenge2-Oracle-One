@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/alura-icono.ico">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/ahorcado.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    
+    
+</head>
+<body>
+    <main>
+
+        <div class="logo-alura">
+           <img  src="img/vector.png">
+        </div>
+
+    
+        <section class="caja-principal">
+
+            <div id="caja-iniciar">
+
+                <div class="caja-iniciar-btn1">
+                    <button class="btn-iniciar">Iniciar Juego</button>
+                </div>
+    
+                <div class="caja-iniciar-btn2">
+                    <button class="btn-agregarPalabra">Agregar Nueva Palabra</button>
+                </div>
+            </div>
+
+            <div id="caja-ingresar">
+
+                <div class="textArea">
+                    <textarea name="ingresarPalabra" cols="10" rows="10" id="texto-ingresar" class="textIngresar"
+                    placeholder="Ingrese una Palabra"></textarea>
+                </div>
+                
+                <div class="caja-ingresar-p">
+                    <p>! Máx. 8 letras</p>
+                </div>
+                
+                <div class="caja-ingresar-btn">
+                    <button class="caja-ingresar-btn1">Guardar y Empezar</button><button class="caja-ingresar-btn2">Cancelar</button>
+                </div>
+                
+           </div>
+
+           <div id="caja-ahorcado">
+
+            <div class="caja-ahorcado-teclado">
+                <canvas id="ahorcado-canvas" height="320px" width="600px"></canvas>
+                <div id="caja-ahorcado-letrasUsadas"></div>
+                <!--letraUsada es la clase para el span de letras usadas-->
+            </div>
+
+            <div id="caja-ahorcado-contenedor"></div>
+            <!--letraAhorcado es la clase para el span de letras del mismo-->
+
+            <div class="caja-ahorcado-btn">
+                <button class="caja-ahorcado-btn1" id="btn-nuevoJuego">Nuevo Juego</button>
+                <button class="caja-ahorcado-btn2" id="btn-salir">Salir</button>
+            </div>
+        </div>
+            
+
+            
+            
+            
+        </section>
+
+        <footer>
+            <p class="copyright"> Trejo Juan Manuel - juanmanueltrejo017@gmail.com - Oracle - Alura</p>
+        </footer>
+    </main>
+
+    <script src="js/palabras.js"></script>
+    <script src="js/agregarPalabra.js"></script>
+    <script src="js/muñeco.js"></script>
+    <script src="js/juego.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+    
+
+        
+    
+</body>
+</html>
